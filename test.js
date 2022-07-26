@@ -1212,3 +1212,44 @@
 // }
 
 // console.log($indicator);
+
+// Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+// Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+// Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+// let firstArray = ["a", "b", "c"];
+// let secondArray = ["d", "e", "f", "g"];
+// let newArray = [];
+// for (let index = 0; index < firstArray.length; index++) {
+//   for (let innerindex = 0; innerindex < secondArray.length; innerindex++) {
+//     newArray.push(firstArray[index] + secondArray[innerindex]);
+//   }
+// }
+
+// console.log(newArray);
+
+// Given an array of numbers, return a new array containing just two numbers (from the original array) that add up to the number 10. If there are no two numbers that add up to 10, return false.
+
+// Specifically use nested loops to solve this exercise even though there are other approaches as well.
+
+// Input: [2, 5, 3, 1, 0, 7, 11]
+// Output: [3, 7]
+
+// Input: [1, 2, 3, 4, 5]
+// Output: false (While 1, 2, 3, and 4 altogether add up to 10, we're seeking just one pair of numbers.)
+
+// let array = [2, 5, 3, 1, 0, 7, 11];
+// let array = [1, 2, 3, 4, 5];
+// let newArray = [false];
+
+// for (let index = 0; index < array.length; index++) {
+//   for (let innerindex = 0; innerindex < array.length; innerindex++) {
+//     if (array[index] !== array[innerindex] && newArray.length === 1 && array[index] + array[innerindex] === 10) {
+//       newArray = newArray.slice(0, newArray[0]);
+//       newArray.push(array[index]);
+//       newArray.push(array[innerindex]);
+//     }
+//   }
+// }
+// console.log(newArray);
