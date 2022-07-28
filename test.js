@@ -1253,3 +1253,96 @@
 //   }
 // }
 // console.log(newArray);
+
+// Find the largest product of any two numbers within a given array.
+
+// Input: [5, -2, 1, -9, -7, 2, 6]
+// Output: 63 (-9 * -7)
+
+// let array = [5, -2, 1, -9, -7, 2, 6];
+// let largest = 0;
+
+// array.forEach(function (num) {
+//   array.forEach(function (innerNum) {
+//     if (num !== innerNum && num * innerNum > largest) {
+//       largest = num * innerNum;
+//     }
+//   });
+// });
+
+// console.log(largest);
+
+// The Collatz Conjecture or 3x+1 problem can be summarized as follows:
+
+// Take any positive integer n. If n is even, divide n by 2 to get n / 2. If n is odd, multiply n by 3 and add 1 to get 3n + 1. Repeat the process indefinitely. The conjecture states that no matter which number you start with, you will always reach 1 eventually.
+
+// Given a number n, return the number of steps required to reach 1.
+
+// Examples
+// Starting with n = 12, the steps would be as follows:
+
+// 12
+// 6
+// 3
+// 10
+// 5
+// 16
+// 8
+// 4
+// 2
+// 1
+
+// Resulting in 9 steps. So for input n = 12, the return value would be 9.
+
+// Activity
+
+// let n = 19;
+// let steps = 0;
+
+// while (n !== 1) {
+//   if (n % 2 === 0) {
+//     n = n / 2;
+//     steps += 1;
+//   } else if (n % 2 !== 0) {
+//     n = n * 3 + 1;
+//     steps += 1;
+//   }
+// }
+
+// console.log(steps);
+
+// Given an array of numbers, return true if the array is a "100 Coolio Array", or false if it is not.
+
+// A "100 Coolio Array" meets the following criteria:
+
+// Its first and last numbers add up to 100,
+// Its second and second-to-last numbers add up to 100,
+// Its third and third-to-last numbers add up to 100,
+// and so on and so forth.
+
+// Here are examples of 100 Coolio Arrays:
+
+// [1, 2, 3, 97, 98, 99]
+// [90, 20, 70, 100, 30, 80, 10]
+
+// let array = [1, 2, 3, 97, 98, 99];
+// let array = [90, 20, 70, 100, 30, 80, 10];
+
+// let index = 0;
+// let reverseIndex = array.length - 1;
+
+// while (index < array.length) {
+//   if (array[index] + array[reverseIndex] === 100) {
+//     index += 1;
+//     reverseIndex -= 1;
+//     if (index === array.length) {
+//       console.log("true");
+//     }
+//   } else if (index === reverseIndex && array[index] === 100) {
+//     console.log("true");
+//     return true;
+//   } else {
+//     console.log("false");
+//     return false;
+//   }
+// }
