@@ -1346,3 +1346,57 @@
 //     return false;
 //   }
 // }
+
+// Write a function to find the longest common prefix string amongst an array of strings.
+
+// If there is no common prefix, return an empty string "".
+
+// Example 1:
+
+// Input: ["flower","flow","flight"]
+// Output: "fl"
+// Example 2:
+
+// Input: ["dog","racecar","car"]
+// Output: ""
+// Explanation: There is no common prefix among the input strings.
+// Note:
+
+// All given inputs are in lowercase letters a-z.
+
+// function findLongest(a, b, c) {
+//   let longest = "";
+//   let index = 0;
+//   while (index < a.length) {
+//     if (a[index] === b[index] && a[index] === c[index]) {
+//       longest = longest + a[index];
+//       index += 1;
+//     } else {
+//       return longest;
+//     }
+//   }
+// }
+
+// console.log(findLongest("flower", "flow", "flight"));
+// console.log(findLongest("dog", "racecar", "car"));
+
+// Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+// Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+// Output: {"Dewey" => 6, "Truman" => 5}
+
+// Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+// let array = ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"];
+// let hash = {};
+
+// for (let index = 0; index < array.length; index++) {
+//   if (!(array[index] in hash)) {
+//     hash[array[index]] = 1;
+//   } else {
+//     hash[array[index]] += 1;
+//   }
+// }
+
+// console.log(hash);
