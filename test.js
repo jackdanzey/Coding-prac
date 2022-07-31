@@ -1447,3 +1447,72 @@
 // });
 
 // console.log(output);
+
+// Given a DNA strand, return its RNA complement (per RNA transcription).
+
+// Both DNA and RNA strands are a sequence of nucleotides. Here we're representing the sequences with single-letter characters (e.g. a sample strand may look like: "AGCA".)
+
+// Given a string representing a DNA strand, provide its transcribed RNA strand, according to the following pattern:
+
+// G becomes C
+// C becomes G
+// T becomes A
+// A becomes U
+
+// So based on all this, here's a sample input/output:
+
+// Input: 'ACGTGGTCTTAA'
+// Output: 'UGCACCAGAAUU'
+
+// let hash = { G: "C", C: "G", T: "A", A: "U" };
+// let input = "ACGTGGTCTTAA";
+// let output = "";
+
+// for (let index = 0; index < input.length; index++) {
+//   output = output + hash[input[index]];
+// }
+
+// console.log(output);
+
+// Given an array of social media posts and a hash of users, return a list of posts (as an array of hashes) that replaces the submitted_by id number as the person's actual name.
+
+// For example, given this array of posts (note that the submitted_by is an id number):
+
+// [
+// {title: 'Me Eating Pizza', submitted_by: 231, likes: 1549},
+// {title: 'i never knew how cool i was until now', submitted_by: 989, likes: 3},
+// {title: 'best selfie evar!!!', submitted_by: 111, likes: 1092},
+// {title: 'Mondays are the worst', submitted_by: 403, likes: 644}
+// ]
+
+// And this hash of users (the key is the id number and the value is the user's real name):
+
+// users = {403 => "Aunty Em", 231 => "Joelle P.", 989 => "Lyndon Johnson", 111 => "Patti Q."}
+
+// Return the array of posts as follows:
+
+// [
+// {title: 'Me Eating Pizza', submitted_by: "Joelle P.", likes: 1549},
+// {title: 'i never knew how cool i was until now', submitted_by: "Lyndon Johnson", likes: 3},
+// {title: 'best selfie evar!!!', submitted_by: "Patti Q.", likes: 1092},
+// {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
+// ]
+
+// let posts = [
+//   { title: "Me Eating Pizza", submitted_by: 231, likes: 1549 },
+//   { title: "i never knew how cool i was until now", submitted_by: 989, likes: 3 },
+//   { title: "best selfie evar!!!", submitted_by: 111, likes: 1092 },
+//   { title: "Mondays are the worst", submitted_by: 403, likes: 644 },
+// ];
+// let users = { 403: "Aunty Em", 231: "Joelle P.", 989: "Lyndon Johnson", 111: "Patti Q." };
+// let newPosts = [];
+
+// for (let index = 0; index < posts.length; index++) {
+//   newPosts.push({
+//     title: posts[index].title,
+//     submitted_by: users[posts[index].submitted_by],
+//     likes: posts[index].likes,
+//   });
+// }
+
+// console.log(newPosts);
