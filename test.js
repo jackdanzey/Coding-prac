@@ -1516,3 +1516,101 @@
 // }
 
 // console.log(newPosts);
+
+// Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
+// Do not use any built-in sort methods.
+
+// Input: “silent”, “listen”
+// Output: true
+
+// Input: “frog”, “bear”
+// Output: false
+
+// let stringOne = "frog";
+// let stringTwo = "bear";
+// let index = 0;
+// let innerindex = 0;
+// while (index < stringOne.length) {
+//   while (innerindex < stringOne.length) {
+//     if (stringOne[index] === stringTwo[innerindex]) {
+//       index++;
+//       innerindex = 0;
+//       if (index === stringOne.length) {
+//         console.log("true");
+//         return;
+//       }
+//     } else if (stringOne[index] !== stringTwo[innerindex]) {
+//       innerindex++;
+//       if (innerindex === stringOne.length) {
+//         console.log("false");
+//         return;
+//       }
+//     }
+//   }
+// }
+
+// You are given two parameters, an array and a number. Return a hash whose keys are each of the values from the array parameter, and whose values are the number parameter.
+
+// Input:
+
+// First argument: ["a", "e", "i", "o", "u"]
+// Second argument: 1
+
+// Output:
+
+// {
+// 'a' => 1,
+// 'e' => 1,
+// 'i' => 1,
+// 'o' => 1,
+// 'u' => 1
+// }
+
+// let array = ["a", "e", "i", "o", "u"];
+// let num = 1;
+// let hash = {};
+
+// array.forEach(function (item) {
+//   hash[item] = num;
+// });
+
+// console.log(hash);
+
+// Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
+
+// Input: ["a", "b", "c", "d"]
+// Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
+
+// use nested loop
+// create an empty array to push items into
+// compare one item with another, skipping over if they are the same
+// if items differ, push both into the new array
+// return new array
+
+// let array = ["a", "b", "c", "d"];
+// let newArray = [];
+
+// for (let index = 0; index < array.length; index++) {
+//   for (let innerindex = 0; innerindex < array.length; innerindex++) {
+//     if (array[index] !== array[innerindex]) {
+//       newArray.push(array[index] + array[innerindex]);
+//     }
+//   }
+// }
+
+// console.log(newArray);
+
+// Given a hash, return a flat array containing all the hash’s keys and values.
+
+// Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+// Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+let hash = { a: 1, b: 2, c: 3, d: 4 };
+let array = [];
+
+Object.entries(hash).forEach(function ([key, value]) {
+  array.push(key, value);
+});
+
+console.log(array);
