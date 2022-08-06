@@ -1606,11 +1606,64 @@
 // Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
 // Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
 
-let hash = { a: 1, b: 2, c: 3, d: 4 };
-let array = [];
+// let hash = { a: 1, b: 2, c: 3, d: 4 };
+// let array = [];
 
-Object.entries(hash).forEach(function ([key, value]) {
-  array.push(key, value);
-});
+// Object.entries(hash).forEach(function ([key, value]) {
+//   array.push(key, value);
+// });
 
-console.log(array);
+// console.log(array);
+
+// Given a hash, return a flat array containing all the hash’s keys and values.
+
+// Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+// Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+// let hash = { a: 1, b: 2, c: 3, d: 4 };
+// let array = [];
+
+// Object.entries(hash).forEach(function ([key, value]) {
+//   array.push(key, value);
+// });
+// console.log(array);
+
+// Given a hash, create a new hash that has the keys and values switched.
+
+// Input: {"a" => 1, "b" => 2, "c" => 3}
+// Output: {1 => "a", 2 => "b", 3 => "c"}
+
+// let hash = { a: 1, b: 2, c: 3, d: 4 };
+// let newHash = {};
+
+// Object.entries(hash).forEach(function ([key, value]) {
+//   newHash[value] = key;
+// });
+
+// console.log(newHash);
+
+// Given a string, find the most commonly occurring letter.
+
+// Input: “peter piper picked a peck of pickled peppers”
+// Output: “p”
+
+// let string = "peter piper picked a peck of pickled peppers";
+// let highest = "";
+// let hash = {};
+// let highestNum = 0;
+
+// for (let index = 0; index < string.length; index++) {
+//   if (!hash[string[index]]) {
+//     hash[string[index]] = 1;
+//   } else {
+//     hash[string[index]] += 1;
+//   }
+// }
+// Object.entries(hash).forEach(function ([key, value]) {
+//   if (value > highestNum) {
+//     highestNum = value;
+//     highest = key;
+//   }
+// });
+
+// console.log(highest);
