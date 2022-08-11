@@ -1760,3 +1760,83 @@
 // });
 
 // console.log(hash);
+
+// Given an array of Youtube videos, for example:
+
+// [
+// {title: 'How to Make Wood', author_id: 4, views: 6},
+// {title: 'How to Seem Perfect', author_id: 4, views: 111},
+// {title: 'Review of the New "Unbreakable Mug"', author_id: 2, views: 202},
+// {title: 'Why Pigs Stink', author_id: 1, views: 12}
+// ]
+
+// and an array of authors, for example:
+
+// [
+// {id: 1, first_name: 'Jazz', last_name: 'Callahan'},
+// {id: 2, first_name: 'Ichabod', last_name: 'Loadbearer'},
+// {id: 3, first_name: 'Saron', last_name: 'Kim'},
+// {id: 4, first_name: 'Teena', last_name: 'Burgess'},
+// ]
+
+// Return a new array of videos in the following format, and only include videos that have at least 100 views:
+
+// [
+// {title: 'How to Seem Perfect', views: 111, author_name: 'Teena Burgess' }
+// {title: 'Review of the New "Unbreakable Mug"', views: 202, author_name: 'Ichabod Loadbearer' },
+// ]
+
+// let videos = [
+//   { title: "How to Make Wood", author_id: 4, views: 6 },
+//   { title: "How to Seem Perfect", author_id: 4, views: 111 },
+//   { title: 'Review of the New "Unbreakable Mug"', author_id: 2, views: 202 },
+//   { title: "Why Pigs Stink", author_id: 1, views: 12 },
+// ];
+// let authors = [
+//   { id: 1, first_name: "Jazz", last_name: "Callahan" },
+//   { id: 2, first_name: "Ichabod", last_name: "Loadbearer" },
+//   { id: 3, first_name: "Saron", last_name: "Kim" },
+//   { id: 4, first_name: "Teena", last_name: "Burgess" },
+// ];
+// let array = [];
+
+// for (let index = 0; index < videos.length; index++) {
+//   if (videos[index].views > 100) {
+//     array.push({
+//       title: videos[index].title,
+//       views: videos[index].views,
+//       author:
+//         authors.find(({ id }) => id === videos[index].author_id).first_name +
+//         " " +
+//         authors.find(({ id }) => id === videos[index].author_id).last_name,
+//     });
+//   }
+// }
+// console.log(array);
+
+// Given two arrays, return a new array that contains the intersection of the two arrays. The intersection means the values that are contained in both of the arrays. Do not use the "&", or any built-in intersection methods.
+
+// NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+// Input: [1, 2, 3, 4, 5], [1, 3, 5, 7, 9]
+// Output: [1, 3, 5]
+
+// let firstArray = [1, 2, 3, 4, 5];
+// let secondArray = [1, 3, 5];
+// let newArray = [];
+// let index = 0;
+// let indexTwo = 0;
+
+// while (index < firstArray.length) {
+//   if (firstArray[index] === secondArray[indexTwo]) {
+//     newArray.push(firstArray[index]);
+//     index++;
+//     indexTwo++;
+//   } else if (firstArray[index] < secondArray[indexTwo]) {
+//     index++;
+//   } else {
+//     indexTwo++;
+//   }
+// }
+
+// console.log(newArray);
