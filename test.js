@@ -1840,3 +1840,41 @@
 // }
 
 // console.log(newArray);
+
+// Given two arrays, determine whether one is a subset of the other. It is considered a subset if all the values in one array are contained within the other.
+
+// NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+// Input: [1, 2, 3, 4, 5, 6], [6, 3, 2]
+// Output: true
+
+// Input: [1, 2, 3, 4, 5, 6], [6, 3, 7]
+// Output: false
+
+// let firstArray = [1, 2, 3, 4, 5, 6];
+// let secondArray = [6, 3, 7];
+// let output = false;
+// let index = 0;
+// let indexTwo = 0;
+
+// iterate across both arrays, comparing the two numbers
+// if the numbers match somewhere, iterate
+// if they do not, return false
+
+// while (indexTwo < secondArray.length) {
+//   if (firstArray[index] === secondArray[indexTwo]) {
+//     index = 0;
+//     indexTwo++;
+//     if (indexTwo >= secondArray.length) {
+//       output = true;
+//       console.log(output);
+//       return;
+//     }
+//   } else if (firstArray[index] !== secondArray[indexTwo]) {
+//     index++;
+//     if (index >= firstArray.length) {
+//       console.log(output);
+//       return;
+//     }
+//   }
+// }
