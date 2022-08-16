@@ -1878,3 +1878,43 @@
 //     }
 //   }
 // }
+
+// var romanToInt = function (s) {
+//   let index = 0;
+//   let inner = 1;
+//   let total = 0;
+//   let hash = { i: 1, v: 5, x: 10, l: 50, c: 100, d: 500, m: 1000 };
+//   while (index < s.length) {
+//     if (hash[s[index]] < hash[s[inner]]) {
+//       total = total + hash[s[inner]] - hash[s[index]];
+//       index += 2;
+//       inner += 2;
+//     } else {
+//       total = total + hash[s[index]];
+//       index++;
+//       inner++;
+//     }
+//   }
+//   return total;
+// };
+
+// console.log(romanToInt("mcmxciv"));
+
+// Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+// Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+// Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+// let first = ["a,", "b", "c"];
+// let second = ["d", "e", "f", "g"];
+// let newArray = [];
+
+// for (let index = 0; index < first.length; index++) {
+//   for (let innerIndex = 0; innerIndex < second.length; innerIndex++) {
+//     if (first[index] !== second[innerIndex]) {
+//       newArray.push(first[index] + second[innerIndex]);
+//     }
+//   }
+// }
+
+// console.log(newArray);
