@@ -84,3 +84,43 @@
 # end
 
 # twosmallbois([4, 22, 10, 5, 15])
+# Write a function that prints out every number from 1 to N, with the following exceptions:
+
+# If the number is divisible by 3, print out "FIZZ".
+# If the number is divisible by 5, print out "BUZZ".
+# If the number is divisible by both 3 and 5, print out "FIZZBUZZ".
+
+# def fizz(n)
+#   if n % 3 == 0 && n % 5 == 0
+#     print "FIZZBUZZ"
+#   elsif n % 5 == 0
+#     print "BUZZ"
+#   elsif n % 3 == 0
+#     print "FIZZ"
+#   else
+#     print n
+#   end
+# end
+
+# print fizz(5)
+
+# If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+# Find the sum of all the multiples of 3 or 5 below 1000.
+
+# sum = 0
+# index = 1
+# indextwo = 1
+
+# while (3 * index) < 1000 && (5 * indextwo) < 1000
+#   if (3 * index) < 1000
+#     sum = sum + (3 * index)
+#     index += 1
+#   end
+#   if (5 * indextwo) < 1000
+#     sum = sum + (5 * indextwo)
+#     indextwo += 1
+#   end
+# end
+
+# print sum
