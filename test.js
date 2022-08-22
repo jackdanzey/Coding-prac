@@ -1939,3 +1939,71 @@
 // });
 
 // console.log(output, hash);
+
+// Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+// You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+// Example 1:
+
+// Input: nums = [2,2,1]
+// Output: 1
+// Example 2:
+
+// Input: nums = [4,1,2,1,2]
+// Output: 4
+// Example 3:
+
+// Input: nums = [1]
+// Output: 1
+
+// /**
+//  * @param {number[]} nums
+//  * @return {number}
+//  */
+//  var singleNumber = function(nums) {
+//   let index = 0;
+//   let output = 0;
+//   let hash = {};
+//   nums.forEach(function (num) {
+//       if (!hash[num]) {
+//           hash[num] = 1;
+//       } else {
+//           hash[num] += 1;
+//       }
+//   });
+//   output = Object.keys(hash).find(key => hash[key] === 1);
+//   return output;
+// };
+
+// Given a string, find the first non-repeating character in it and return its index. If it doesn't exist, return -1.
+
+// NOTE: You must accomplish this in O(n) time. This is also known as linear time.
+
+// Examples:
+
+// s = "leetcode"
+// return 0.
+// (The "l" is the first character that only appears once in the string, and appears at index 0.)
+
+// s = "loveleetcode",
+// return 2.
+// (The "l" and "o" are repeated, so the first non-repeating character is the "v", which is at index 2.)
+
+// Note: You may assume the string contain only lowercase letters.
+
+let hash = {};
+let string = "blahblahleetcode";
+
+for (let index = 0; index < string.length; index++) {
+  if (!hash[string[index]]) {
+    hash[string[index]] = 1;
+    // hash[string[index] + "index"] = index;
+  } else {
+    hash[string[index]] += 1;
+  }
+}
+let output = Object.keys(hash).find((key) => hash[key] === 1);
+let stringIndex = string.indexOf(output);
+console.log(output);
+console.log(stringIndex);
