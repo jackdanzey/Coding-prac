@@ -143,3 +143,51 @@
 # end
 
 # print fibo(11)
+
+# Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+# Input: “racecar”
+# Output: true
+
+# Input: “baloney”
+# Output: false
+
+# def palindrome(string)
+#   reverse = string.reverse
+#   index = 0
+
+#   while index < string.length
+#     if string[index] != reverse[index]
+#       return false
+#     else
+#       index += 1
+#     end
+#   end
+#   return true
+# end
+
+# print palindrome("racecar")
+
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+array = ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+votes = {}
+index = 0
+
+while index < array.length
+  if !votes[array[index]]
+    votes[array[index]] = 1
+    index += 1
+  else
+    votes[array[index]] += 1
+    index += 1
+  end
+end
+
+print votes
