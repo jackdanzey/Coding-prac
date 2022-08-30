@@ -176,18 +176,50 @@
 
 # Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
 
-array = ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
-votes = {}
-index = 0
+# array = ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+# votes = {}
+# index = 0
 
-while index < array.length
-  if !votes[array[index]]
-    votes[array[index]] = 1
-    index += 1
-  else
-    votes[array[index]] += 1
-    index += 1
-  end
+# while index < array.length
+#   if !votes[array[index]]
+#     votes[array[index]] = 1
+#     index += 1
+#   else
+#     votes[array[index]] += 1
+#     index += 1
+#   end
+# end
+
+# print votes
+
+# Given a hash, where the keys are strings representing food items, and the values are numbers representing the price of each food, return the amount someone would pay if they'd order one of each food from the entire menu.
+
+# Input: {"hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2}
+
+# Output: 14
+
+# Explanation: If someone would order one of everything on the menu, they'd pay a total of 14 (the sum of all the hash's values).
+
+# food = { "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 }
+# total = 0
+# index = 0
+
+# food.each do |key, value|
+#   total = total + value
+#   index += 1
+# end
+# puts total
+
+# Given a hash, return a flat array containing all the hash’s keys and values.
+
+# Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+# Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+hash = { "a" => 1, "b" => 2, "c" => 3, "d" => 4 }
+array = []
+hash.each do |key, value|
+  array << key
+  array << value
 end
 
-print votes
+p array
