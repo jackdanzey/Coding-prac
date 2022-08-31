@@ -215,11 +215,11 @@
 # Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
 # Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
 
-hash = { "a" => 1, "b" => 2, "c" => 3, "d" => 4 }
-array = []
-hash.each do |key, value|
-  array << key
-  array << value
-end
+# hash = { "a" => 1, "b" => 2, "c" => 3, "d" => 4 }
+# array = []
+# hash.each do |key, value|
+#   array << key
+#   array << value
+# end
 
-p array
+# p array
