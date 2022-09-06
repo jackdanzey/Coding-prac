@@ -2060,3 +2060,21 @@
 // });
 
 // console.log(newHash);
+
+// Given a string, find the most commonly occurring letter.
+
+// Input: “peter piper picked a peck of pickled peppers”
+// Output: “p”
+
+// let string = "peter piper picked a peck of pickled peppers";
+// let counter = {};
+// for (let index = 0; index < string.length; index++) {
+//   if (!counter[string[index]]) {
+//     counter[string[index]] = 1;
+//   } else {
+//     counter[string[index]] += 1;
+//   }
+// }
+// let values = Object.values(counter);
+
+// console.log(Math.max(...values));

@@ -223,3 +223,101 @@
 # end
 
 # p array
+
+# Given two strings, return true if they are anagrams of each other, and false if they are not. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman.
+
+# Do not use any built-in sort methods.
+
+# Input: “silent”, “listen”
+# Output: true
+
+# Input: “frog”, “bear”
+# Output: false
+
+# string_one = "frog"
+# string_two = "bear"
+# index = 0
+# letter_hash = {}
+# output = "true"
+
+# while index < string_one.length
+#   if !letter_hash[string_one[index]]
+#     letter_hash[string_one[index]] = 1
+#     index += 1
+#   end
+# end
+# index = 0
+# while index < string_two.length
+#   if !letter_hash[string_two[index]]
+#     output = "false"
+#     print output
+#     return
+#   else
+#     index += 1
+#   end
+#   if index == string_two.length
+#     print output
+#   end
+# end
+
+# Given an array of numbers, return true if the array is a "100 Coolio Array", or false if it is not.
+
+# A "100 Coolio Array" meets the following criteria:
+
+# Its first and last numbers add up to 100,
+# Its second and second-to-last numbers add up to 100,
+# Its third and third-to-last numbers add up to 100,
+# and so on and so forth.
+
+# Here are examples of 100 Coolio Arrays:
+
+# [1, 2, 3, 97, 98, 99]
+# [90, 20, 70, 100, 30, 80, 10]
+
+# coolio = [1, 2, 3, 100, 97, 98, 99]
+# index = 0
+# reverse_index = coolio.length - 1
+# output = "true"
+# while index < reverse_index
+#   if coolio[index] + coolio[reverse_index] != 100
+#     output = "false"
+#     break
+#   else
+#     index += 1
+#     reverse_index -= 1
+#   end
+# end
+
+# print output
+
+# Write a function to find the longest common prefix string amongst an array of strings.
+
+# If there is no common prefix, return an empty string "".
+
+# Example 1:
+
+# Input: ["flower","flow","flight"]
+# Output: "fl"
+# Example 2:
+
+# Input: ["dog","racecar","car"]
+# Output: ""
+# Explanation: There is no common prefix among the input strings.
+# Note:
+
+# All given inputs are in lowercase letters a-z.
+
+# def common(a, b, c)
+#   index = 0
+#   output = ""
+#   while index < a.length
+#     if a[index] == b[index] && a[index] == c[index]
+#       output = output + a[index]
+#       index += 1
+#     else
+#       return output
+#     end
+#   end
+# end
+
+# print common("dog", "racecar", "car")
