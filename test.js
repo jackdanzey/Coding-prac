@@ -2078,3 +2078,20 @@
 // let values = Object.values(counter);
 
 // console.log(Math.max(...values));
+
+// Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+// Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+// Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+// let arrayOne = ["a", "b", "c"];
+// let arrayTwo = ["d", "e", "f", "g"];
+// let newArray = [];
+
+// for (let index = 0; index < arrayOne.length; index++) {
+//   for (let inner = 0; inner < arrayTwo.length; inner++) {
+//     newArray.push(arrayOne[index] + arrayTwo[inner]);
+//   }
+// }
+
+// console.log(newArray);

@@ -28,12 +28,26 @@
 # else:
 #     print('your number is even')
 
-name = input('Please create a login name: ')
-password = input('Please create a login password: ')
-loginname = input('Please enter your login name: ')
-loginpassword = input('Please enter your login password: ')
+# name = input('Please create a login name: ')
+# password = input('Please create a login password: ')
+# loginname = input('Please enter your login name: ')
+# loginpassword = input('Please enter your login password: ')
 
-if loginname != name or loginpassword != password:
-    print('invalid credentials, dumbass!')
-else:
-    print('login successful!')
+# if loginname != name or loginpassword != password:
+#     print('invalid credentials, dumbass!')
+# else:
+#     print('login successful!')
+
+# Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
+
+# Input: ["a", "b", "c", "d"]
+# Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
+
+# array = ['a', 'b', 'c', 'd']
+# newarray = []
+
+# for x in array:
+#     for y in array:
+#         if x != y:
+#             newarray.append(x + y)
+# print(newarray)
