@@ -63,3 +63,22 @@
 
 
 # print(diagonalDifference([[1, 2, 3], [3, 4, 5], [6, 7, 8]]))
+
+# Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with  places after the decimal.
+
+# def plusMinus(arr):
+#     index = 0
+#     dic = {'pos' : 0, 'neg' : 0, 'zero' : 0}
+#     while index < len(arr):
+#         if arr[index] > 0:
+#             dic['pos'] += 1
+#             index += 1
+#         elif arr[index] < 0:
+#             dic['neg'] += 1
+#             index += 1
+#         elif arr[index] == 0:
+#             dic['zero'] += 1
+#             index += 1
+#     print(round(dic['pos'] / len(arr), 6))
+#     print(round(dic['neg'] / len(arr), 6))
+#     print(round(dic['zero'] / len(arr), 6))
