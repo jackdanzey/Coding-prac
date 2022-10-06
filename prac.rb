@@ -321,3 +321,31 @@
 # end
 
 # print common("dog", "racecar", "car")
+
+# Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
+
+# Note: - 12:00:00AM on a 12-hour clock is 00:00:00 on a 24-hour clock.
+# - 12:00:00PM on a 12-hour clock is 12:00:00 on a 24-hour clock.
+
+# def timeConversion(s)
+#   if s[0] == "1" && s[1] == "2" && s[s.length - 2] == "A"
+#     s[0] = "0"
+#     s[1] = "0"
+#     return s[0..7]
+#   end
+#   if s[s.length - 2] == "P"
+#     if s[0] == "1" && s[1] == "2"
+#       s[0] = "0"
+#       s[1] = "0"
+#     elsif s[0] == "1"
+#       n = s[0] + s[1]
+#     else
+#       n = s[1]
+#     end
+#     n = n.to_i + 12
+#     n = n.to_s
+#     s[0] = n[0]
+#     s[1] = n[1]
+#   end
+#   return s[0..7]
+# end
