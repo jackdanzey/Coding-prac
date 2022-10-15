@@ -82,3 +82,17 @@
 #     print(round(dic['pos'] / len(arr), 6))
 #     print(round(dic['neg'] / len(arr), 6))
 #     print(round(dic['zero'] / len(arr), 6))
+
+# Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+# You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+# class Solution:
+#     def singleNumber(self, nums: List[int]) -> int:
+#         numdict = {}
+#         for x in nums:
+#             if x in numdict:
+#                 numdict[x] += 1
+#             else:
+#                 numdict[x] = 1
+#         return min(numdict, key=numdict.get)

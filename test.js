@@ -2095,3 +2095,19 @@
 // }
 
 // console.log(newArray);
+
+// Given two strings of equal length, write a function that returns the number of characters that are different between the two strings.
+
+// Input: "ABCDEFG", "ABCXEOG"
+// Output: 2
+
+// let inputOne = "ABCDEFG";
+// let inputTwo = "ABCXEOG";
+// let output = 0;
+
+// for (let index = 0; index < inputOne.length; index++) {
+//   if (inputOne[index] !== inputTwo[index]) {
+//     output += 1;
+//   }
+// }
+// console.log(output);
