@@ -362,3 +362,12 @@
 #   array << value
 # end
 # p array
+
+# Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+# def miniMaxSum(arr)
+#   arr = arr.sort
+#   min = arr[0..3].sum
+#   max = arr[1..4].sum
+#   print min.to_s + " " + max.to_s
+# end
