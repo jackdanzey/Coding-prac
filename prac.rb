@@ -371,3 +371,35 @@
 #   max = arr[1..4].sum
 #   print min.to_s + " " + max.to_s
 # end
+
+# Sam's house has an apple tree and an orange tree that yield an abundance of fruit. Using the information given below, determine the number of apples and oranges that land on Sam's house.
+
+# In the diagram below:
+
+# The red region denotes the house, where s is the start point, and t is the endpoint. The apple tree is to the left of the house, and the orange tree is to its right.
+# Assume the trees are located on a single point, where the apple tree is at point a, and the orange tree is at point b.
+# When a fruit falls from its tree, it lands d units of distance from its tree of origin along the x-axis. *A negative value of  means the fruit fell d units to the tree's left, and a positive value of d means it falls d units to the tree's right. *
+# Apple and orange(2).png
+
+# Given the value of  for  apples and  oranges, determine how many apples and oranges will fall on Sam's house (i.e., in the inclusive range )?
+
+# def countApplesAndOranges(s, t, a, b, apples, oranges)
+#   app = []
+#   orr = []
+#   app_count = 0
+#   orr_count = 0
+#   apples.each do |apple|
+#      app << (a + apple)
+#      if (a + apple) >= s && (a + apple) <= t
+#        app_count += 1
+#      end
+#   end
+#   oranges.each do |orange|
+#       orr << (b + orange)
+#       if (b + orange) >= s && (b + orange) <= t
+#         orr_count += 1
+#       end
+#     end
+#   puts app_count
+#   puts orr_count
+# end
