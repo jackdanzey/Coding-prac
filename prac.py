@@ -119,3 +119,46 @@
 #                 output = True
 
 # print(output)
+
+# Given two sorted arrays, merge the second array into the first array while ensuring that the first array remains sorted. Do not use any built-in sort methods.
+
+# Input :
+# A : [1, 5, 8]
+# B : [6, 9]
+
+# Modified A : [1, 5, 6, 8, 9]
+
+# first = [1, 5, 8]
+# second = [6, 9]
+# index = 0
+
+# while index < len(second):
+#     if second[index] > first[index]:
+#         first.insert((index + 1), second[index])
+#         index += 1
+#     else:
+#         index += 1
+
+# print(first)
+# print(second)
+# print('test')
+
+# Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# Output: {"Dewey" => 6, "Truman" => 5}
+
+# Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+# prez = ["Dewey", "Truman", "Dewey", "Dewey", "Truman",
+#         "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+# prezcount = {}
+
+# for guy in prez:
+#     if guy not in prezcount:
+#         prezcount[guy] = 1
+#     else:
+#         prezcount[guy] += 1
+
+# print(prezcount)
