@@ -162,3 +162,13 @@
 #         prezcount[guy] += 1
 
 # print(prezcount)
+
+
+food = {"hot dog": 2, "hamburger": 3, "steak sandwich": 5,
+        "fries": 1, "cole slaw": 1, "soda": 2}
+total = 0
+
+for key, value in food.items():
+    total += value
+
+print(total)
