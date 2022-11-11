@@ -164,11 +164,23 @@
 # print(prezcount)
 
 
-food = {"hot dog": 2, "hamburger": 3, "steak sandwich": 5,
-        "fries": 1, "cole slaw": 1, "soda": 2}
-total = 0
+# food = {"hot dog": 2, "hamburger": 3, "steak sandwich": 5,
+#         "fries": 1, "cole slaw": 1, "soda": 2}
+# total = 0
 
-for key, value in food.items():
-    total += value
+# for key, value in food.items():
+#     total += value
 
-print(total)
+# print(total)
+
+# Given a hash, create a new hash that has the keys and values switched.
+
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+# letterKeys = {'a': 1, 'b': 2, 'c': 3}
+# numberKeys = {}
+
+# for key, value in letterKeys.items():
+#     numberKeys[value] = key
+# print(numberKeys)

@@ -412,10 +412,23 @@
 
 # Explanation: If someone would order one of everything on the menu, they'd pay a total of 14 (the sum of all the hash's values).
 
-food = { "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 }
-total = 0
+# food = { "hot dog" => 2, "hamburger" => 3, "steak sandwich" => 5, "fries" => 1, "cole slaw" => 1, "soda" => 2 }
+# total = 0
 
-for key, value in food
-  total += value
-end
-puts total
+# for key, value in food
+#   total += value
+# end
+# puts total
+
+# Given a hash, create a new hash that has the keys and values switched.
+
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+# letter_keys = { "a" => 1, "b" => 2, "c" => 3 }
+# number_keys = {}
+# index = 0
+# for key, value in letters
+#   numbers[value] = key
+# end
+# puts numbers
