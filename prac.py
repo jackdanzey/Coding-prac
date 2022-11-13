@@ -184,3 +184,41 @@
 # for key, value in letterKeys.items():
 #     numberKeys[value] = key
 # print(numberKeys)
+
+# Write a function to find the longest common prefix string amongst an array of strings.
+
+# If there is no common prefix, return an empty string "".
+
+# Example 1:
+
+# Input: ["flower","flow","flight"]
+# Output: "fl"
+# Example 2:
+
+# Input: ["dog","racecar","car"]
+# Output: ""
+# Explanation: There is no common prefix among the input strings.
+# Note:
+
+# All given inputs are in lowercase letters a-z.
+
+# check the first letter of the first word against the first letter of the second word
+# check the first letter of the first word against the first letter of the third word, and so on
+#
+def prefix(array):
+    index = 0
+    inner = 1
+    output = ''
+    while index < len(min(array)):
+        while inner < len(array):
+            if array[0][index] == array[inner][index]:
+                inner += 1
+            else:
+                return output
+        output = output + array[0][index]
+        index += 1
+        inner = 1
+    return output
+
+
+print(prefix(["flower", "flow", "flight"]))
