@@ -277,16 +277,67 @@
 # {title: 'Mondays are the worst', submitted_by: "Aunty Em", likes: 644}
 # ]
 
-posts = [
-    {'title': 'Me Eating Pizza', 'submitted_by': 231, 'likes': 1549},
-    {'title': 'i never knew how cool i was until now',
-        'submitted_by': 989, 'likes': 3},
-    {'title': 'best selfie evar!!!', 'submitted_by': 111, 'likes': 1092},
-    {'title': 'Mondays are the worst', 'submitted_by': 403, 'likes': 644}
-]
-users = {403: "Aunty Em", 231: "Joelle P.",
-         989: "Lyndon Johnson", 111: "Patti Q."}
+# posts = [
+#     {'title': 'Me Eating Pizza', 'submitted_by': 231, 'likes': 1549},
+#     {'title': 'i never knew how cool i was until now',
+#         'submitted_by': 989, 'likes': 3},
+#     {'title': 'best selfie evar!!!', 'submitted_by': 111, 'likes': 1092},
+#     {'title': 'Mondays are the worst', 'submitted_by': 403, 'likes': 644}
+# ]
+# users = {403: "Aunty Em", 231: "Joelle P.",
+#          989: "Lyndon Johnson", 111: "Patti Q."}
 
-for p in posts:
-    p['submitted_by'] = users[p['submitted_by']]
-print(posts)
+# for p in posts:
+#     p['submitted_by'] = users[p['submitted_by']]
+# print(posts)
+
+# Given a list of books provided in this format:
+
+# [
+# {title: "The Lord of the Rings", author: "J. R. R. Tolkien", year: 1954 },
+# {title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
+# {title: "1984", author: "George Orwell", year: 1949 },
+# {title: "Go Set a Watchman", author: "Harper Lee", year: 2015 },
+# {title: "The Hobbit", author: "J. R. R. Tolkien", year: 1937 },
+# {title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+# {title: "The Two Towers", author: "J. R. R. Tolkien", year: 1954 }
+# ]
+
+# return the data in this new author-centric format:
+
+# { "J. R. R. Tolkien" => [
+# {title: "The Lord of the Rings", year: 1954 },
+# {title: "The Hobbit", year: 1937 },
+# {title: "The Two Towers", year: 1954 }
+# ],
+# "Harper Lee" => [
+# {title: "To Kill a Mockingbird", year: 1960 },
+# {title: "Go Set a Watchman", year: 2015 }
+# ],
+# "George Orwell" => [
+# {title: "1984", year: 1949 }
+# ],
+# "F. Scott Fitzgerald" => [
+# {title: "The Great Gatsby", year: 1925 }
+# ]
+# }
+
+books = [
+    {'title': "The Lord of the Rings", 'author': "J. R. R. Tolkien", 'year': 1954},
+    {'title': "To Kill a Mockingbird", 'author': "Harper Lee", 'year': 1960},
+    {'title': "1984", 'author': "George Orwell", 'year': 1949},
+    {'title': "Go Set a Watchman", 'author': "Harper Lee", 'year': 2015},
+    {'title': "The Hobbit", 'author': "J. R. R. Tolkien", 'year': 1937},
+    {'title': "The Great Gatsby", 'author': "F. Scott Fitzgerald", 'year': 1925},
+    {'title': "The Two Towers", 'author': "J. R. R. Tolkien", 'year': 1954}
+]
+newbooks = {}
+for book in books:
+    if book['author'] not in newbooks:
+        newbooks[book['author']] = [book]
+    else:
+        newbooks[book['author']].append(book)
+for key, value in newbooks.items():
+    del (value[0]['author'])
+
+print(newbooks)
