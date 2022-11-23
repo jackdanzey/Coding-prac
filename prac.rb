@@ -501,3 +501,29 @@
 # end
 
 # puts posts
+
+"HackerLand University has the following grading policy:
+
+Every student receives a grade in the inclusive range from 0 to 100.
+Any grade less than 40 is a failing grade.
+
+Sam is a professor at the university and likes to round each student's  according to these rules:
+
+If the difference between the grade and the next multiple of 5 is less than 3, round  up to the next multiple of 5.
+If the value of grade is less than 38, no rounding occurs as the result will still be a failing grade."
+
+# def grading_students(grades)
+#   index = 0
+#   while index < grades.length
+#     if grades[index] > 37 && grades[index] % 5 == 3
+#       grades[index] = grades[index] + 2
+#     elsif grades[index] > 37 && grades[index] % 5 == 4
+#       grades[index] = grades[index] + 1
+#     end
+#     index += 1
+#   end
+#   print grades
+#   return
+# end
+
+# puts grading_students([73, 67, 38, 33])
