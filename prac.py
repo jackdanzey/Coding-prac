@@ -322,22 +322,22 @@
 # ]
 # }
 
-books = [
-    {'title': "The Lord of the Rings", 'author': "J. R. R. Tolkien", 'year': 1954},
-    {'title': "To Kill a Mockingbird", 'author': "Harper Lee", 'year': 1960},
-    {'title': "1984", 'author': "George Orwell", 'year': 1949},
-    {'title': "Go Set a Watchman", 'author': "Harper Lee", 'year': 2015},
-    {'title': "The Hobbit", 'author': "J. R. R. Tolkien", 'year': 1937},
-    {'title': "The Great Gatsby", 'author': "F. Scott Fitzgerald", 'year': 1925},
-    {'title': "The Two Towers", 'author': "J. R. R. Tolkien", 'year': 1954}
-]
-newbooks = {}
-for book in books:
-    if book['author'] not in newbooks:
-        newbooks[book['author']] = [book]
-    else:
-        newbooks[book['author']].append(book)
-for key, value in newbooks.items():
-    del (value[0]['author'])
+# books = [
+#     {'title': "The Lord of the Rings", 'author': "J. R. R. Tolkien", 'year': 1954},
+#     {'title': "To Kill a Mockingbird", 'author': "Harper Lee", 'year': 1960},
+#     {'title': "1984", 'author': "George Orwell", 'year': 1949},
+#     {'title': "Go Set a Watchman", 'author': "Harper Lee", 'year': 2015},
+#     {'title': "The Hobbit", 'author': "J. R. R. Tolkien", 'year': 1937},
+#     {'title': "The Great Gatsby", 'author': "F. Scott Fitzgerald", 'year': 1925},
+#     {'title': "The Two Towers", 'author': "J. R. R. Tolkien", 'year': 1954}
+# ]
+# newbooks = {}
+# for book in books:
+#     if book['author'] not in newbooks:
+#         newbooks[book['author']] = [book]
+#     else:
+#         newbooks[book['author']].append(book)
+# for key, value in newbooks.items():
+#     del (value[0]['author'])
 
-print(newbooks)
+# print(newbooks)

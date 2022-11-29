@@ -502,15 +502,15 @@
 
 # puts posts
 
-"HackerLand University has the following grading policy:
+# "HackerLand University has the following grading policy:
 
-Every student receives a grade in the inclusive range from 0 to 100.
-Any grade less than 40 is a failing grade.
+# Every student receives a grade in the inclusive range from 0 to 100.
+# Any grade less than 40 is a failing grade.
 
-Sam is a professor at the university and likes to round each student's  according to these rules:
+# Sam is a professor at the university and likes to round each student's  according to these rules:
 
-If the difference between the grade and the next multiple of 5 is less than 3, round  up to the next multiple of 5.
-If the value of grade is less than 38, no rounding occurs as the result will still be a failing grade."
+# If the difference between the grade and the next multiple of 5 is less than 3, round  up to the next multiple of 5.
+# If the value of grade is less than 38, no rounding occurs as the result will still be a failing grade."
 
 # def grading_students(grades)
 #   index = 0
@@ -527,3 +527,26 @@ If the value of grade is less than 38, no rounding occurs as the result will sti
 # end
 
 # puts grading_students([73, 67, 38, 33])
+
+# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+
+# Find the largest palindrome made from the product of two 3-digit numbers.
+
+highest = 0
+first = 999
+second = 999
+comparison = 0
+while highest == 0
+  comparison = (first * second).to_s
+  if comparison[0] == comparison[5] && comparison[1] == comparison[4] && comparison[2] == comparison[3]
+    highest = comparison.to_i
+  end
+  if first > 0
+    first = first - 1
+  else
+    first = 999
+    second = second - 1
+  end
+end
+
+puts comparison
