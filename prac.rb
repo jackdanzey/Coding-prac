@@ -532,21 +532,21 @@
 
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
-highest = 0
-first = 999
-second = 999
-comparison = 0
-while highest == 0
-  comparison = (first * second).to_s
-  if comparison[0] == comparison[5] && comparison[1] == comparison[4] && comparison[2] == comparison[3]
-    highest = comparison.to_i
-  end
-  if first > 0
-    first = first - 1
-  else
-    first = 999
-    second = second - 1
-  end
-end
+# highest = 0
+# first = 999
+# second = 999
+# comparison = 0
+# while highest == 0
+#   comparison = (first * second).to_s
+#   if comparison[0] == comparison[5] && comparison[1] == comparison[4] && comparison[2] == comparison[3]
+#     highest = comparison.to_i
+#   end
+#   if first > 0
+#     first = first - 1
+#   else
+#     first = 999
+#     second = second - 1
+#   end
+# end
 
-puts comparison
+# puts comparison
