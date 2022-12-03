@@ -2111,3 +2111,32 @@
 //   }
 // }
 // console.log(output);
+
+// Given two sorted arrays, merge the second array into the first array while ensuring that the first array remains sorted. Do not use any built-in sort methods.
+
+// Input :
+// A : [1, 5, 8]
+// B : [6, 9]
+
+// Modified A : [1, 5, 6, 8, 9]
+
+let arrayOne = [1, 5, 8];
+let arrayTwo = [6, 9];
+let newArray = [];
+let index = 0;
+let inner = 0;
+
+while (index < arrayOne.length) {
+  if (arrayOne[index] < arrayTwo[inner]) {
+    newArray.push(arrayOne[index]);
+    index++;
+  } else {
+    newArray.push(arrayTwo[inner]);
+    inner++;
+  }
+  if (index === arrayOne.length) {
+    newArray.push(arrayTwo[inner]);
+  }
+}
+
+console.log(newArray);
