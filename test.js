@@ -2120,23 +2120,44 @@
 
 // Modified A : [1, 5, 6, 8, 9]
 
-let arrayOne = [1, 5, 8];
-let arrayTwo = [6, 9];
-let newArray = [];
-let index = 0;
-let inner = 0;
+// let arrayOne = [1, 5, 8];
+// let arrayTwo = [6, 9];
+// let newArray = [];
+// let index = 0;
+// let inner = 0;
 
-while (index < arrayOne.length) {
-  if (arrayOne[index] < arrayTwo[inner]) {
-    newArray.push(arrayOne[index]);
-    index++;
-  } else {
-    newArray.push(arrayTwo[inner]);
-    inner++;
-  }
-  if (index === arrayOne.length) {
-    newArray.push(arrayTwo[inner]);
-  }
-}
+// while (index < arrayOne.length) {
+//   if (arrayOne[index] < arrayTwo[inner]) {
+//     newArray.push(arrayOne[index]);
+//     index++;
+//   } else {
+//     newArray.push(arrayTwo[inner]);
+//     inner++;
+//   }
+//   if (index === arrayOne.length) {
+//     newArray.push(arrayTwo[inner]);
+//   }
+// }
 
-console.log(newArray);
+// console.log(newArray);
+
+// Given a year, report if it is a leap year.
+
+// # The tricky thing here is that a leap year in the Gregorian calendar occurs:
+
+// # on every year that is evenly divisible by 4
+// # except every year that is evenly divisible by 100
+// # unless the year is also evenly divisible by 400
+// # For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
+
+// # If your language provides a method in the standard library that does this look-up, pretend it doesn't exist and implement it yourself.
+
+// let leap = 2000;
+
+// if (leap % 4 === 0 && leap % 100 !== 0) {
+//   console.log("Leap Year!");
+// } else if (leap % 400 === 0) {
+//   console.log("Leap Year!");
+// } else {
+//   console.log("Not a Leap Year!");
+// }
