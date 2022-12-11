@@ -2161,3 +2161,18 @@
 // } else {
 //   console.log("Not a Leap Year!");
 // }
+
+// # Given a hash, return a flat array containing all the hash’s keys and values.
+
+// # Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+// # Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+// let dictionary = { a: 1, b: 2, c: 3, d: 4 };
+// let array = [];
+
+// Object.entries(dictionary).forEach(function ([key, value]) {
+//   array.push(key);
+//   array.push(value);
+// });
+
+// console.log(array);
