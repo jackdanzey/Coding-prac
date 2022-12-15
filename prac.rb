@@ -615,3 +615,30 @@
 # end
 
 # p array
+
+# You are given two parameters, an array and a number. Return a hash whose keys are each of the values from the array parameter, and whose values are the number parameter.
+
+# Input:
+
+# First argument: ["a", "e", "i", "o", "u"]
+# Second argument: 1
+
+# Output:
+
+# {
+# 'a' => 1,
+# 'e' => 1,
+# 'i' => 1,
+# 'o' => 1,
+# 'u' => 1
+# }
+
+# argument_one = ["a", "e", "i", "o", "u"]
+# argument_two = 1
+# combo = {}
+
+# argument_one.each do |letter|
+#   combo[letter] = argument_two
+# end
+
+# p combo
