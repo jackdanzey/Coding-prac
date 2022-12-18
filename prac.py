@@ -424,7 +424,7 @@
 
 # You are given two parameters, an array and a number. Return a hash whose keys are each of the values from the array parameter, and whose values are the number parameter.
 
-# Input:
+# Input:0
 
 # First argument: ["a", "e", "i", "o", "u"]
 # Second argument: 1
@@ -447,3 +447,17 @@
 #     combo[x] = argumentTwo
 
 # print(combo)
+
+# Given a hash, return a flat array containing all the hash’s keys and values.
+
+# Input: {“a” => 1, “b” => 2, “c” => 3, “d” => 4}
+# Output: [“a”, 1, “b”, 2, “c”, 3, “d”, 4]
+
+# dic = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+# list = []
+
+# for key, value in dic.items():
+#     list.append(key)
+#     list.append(value)
+
+# print(list)
