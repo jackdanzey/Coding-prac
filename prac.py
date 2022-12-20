@@ -461,3 +461,24 @@
 #     list.append(value)
 
 # print(list)
+
+# Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+
+# def dupe(letters):
+#     index = 0
+#     indexTwo = 1
+#     result = ''
+#     while indexTwo < len(letters):
+#         if letters[index] == letters[indexTwo]:
+#             result = letters[index]
+#             print(result)
+#             return
+#         else:
+#             index += 1
+#             indexTwo += 1
+
+# dupe('abcdefghhijkkloooop')

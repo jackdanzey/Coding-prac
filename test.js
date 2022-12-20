@@ -2191,3 +2191,25 @@
 // });
 
 // console.log(array);
+
+// # Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+// # Input: “abcdefghhijkkloooop”
+// # Output: “h”
+
+// function dupe(letters) {
+//   let index = 0;
+//   let indexTwo = 1;
+//   let result = "";
+//   while (indexTwo < letters.length) {
+//     if (letters[index] === letters[indexTwo]) {
+//       result = letters[index];
+//       return result;
+//     } else {
+//       index++;
+//       indexTwo++;
+//     }
+//   }
+// }
+
+// console.log(dupe("abcdefghhijkkloooop"));
