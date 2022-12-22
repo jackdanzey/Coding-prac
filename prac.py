@@ -482,3 +482,15 @@
 #             indexTwo += 1
 
 # dupe('abcdefghhijkkloooop')
+
+# Write a function that accepts an array of strings and returns a new array containing every other string from the original array. For example, if the input is ["a", "b", "c", "d", "e", "f"], the output should be ["a", "c", "e"].
+
+# def oddArray(array):
+#     index = 0
+#     newArray = []
+#     while index < len(array):
+#         newArray.append(array[index])
+#         index += 2
+#     print(newArray)
+
+# oddArray(['a', 'b', 'c', 'd', 'e', 'f'])
