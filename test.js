@@ -2213,3 +2213,20 @@
 // }
 
 // console.log(dupe("abcdefghhijkkloooop"));
+
+// Given an array of numbers, write a function that returns a new array that contains all numbers from the original array that are less than 100.
+
+// Input: [99, 101, 88, 4, 2000, 50]
+// Output: [99, 88, 4, 50]
+
+// function lowNum(array) {
+//   let newArray = [];
+//   for (let index = 0; index < array.length; index++) {
+//     if (array[index] < 100) {
+//       newArray.push(array[index]);
+//     }
+//   }
+//   console.log(newArray);
+// }
+
+// lowNum([22, 450, 200, 15, 20]);

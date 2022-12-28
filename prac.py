@@ -494,3 +494,18 @@
 #     print(newArray)
 
 # oddArray(['a', 'b', 'c', 'd', 'e', 'f'])
+
+# Given an array of numbers, write a function that returns a new array that contains all numbers from the original array that are less than 100.
+
+# Input: [99, 101, 88, 4, 2000, 50]
+# Output: [99, 88, 4, 50]
+
+# def lowNums(array):
+#     newArray = []
+#     for num in array:
+#         if num < 100:
+#             newArray.append(num)
+#     print(newArray)
+
+
+# lowNums([20, 200, 100, 4000, 54, 18])
