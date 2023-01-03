@@ -2230,3 +2230,23 @@
 // }
 
 // lowNum([22, 450, 200, 15, 20]);
+
+// Given a string, find the most commonly occurring letter.
+
+// Input: “peter piper picked a peck of pickled peppers”
+// Output: “p”
+
+// let string = "peter piper picked a peck of pickled peppers";
+// let output = {};
+// string = string.replace(/\s+/g, "");
+
+// for (let index = 0; index < string.length; index++) {
+//   if (!output[string[index]]) {
+//     output[string[index]] = 1;
+//   } else {
+//     output[string[index]] += 1;
+//   }
+// }
+
+// output = Object.keys(output).reduce((a, b) => (output[a] > output[b] ? a : b));
+// console.log(output);
