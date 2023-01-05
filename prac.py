@@ -509,3 +509,22 @@
 
 
 # lowNums([20, 200, 100, 4000, 54, 18])
+
+# The Collatz Conjecture or 3x+1 problem can be summarized as follows:
+
+# Take any positive integer n. If n is even, divide n by 2 to get n / 2. If n is odd, multiply n by 3 and add 1 to get 3n + 1. Repeat the process indefinitely. The conjecture states that no matter which number you start with, you will always reach 1 eventually.
+
+# Given a number n, return the number of steps required to reach 1.
+
+# num = 12
+# count = 0
+
+# while num != 1:
+#     if num % 2 == 0:
+#         num = num / 2
+#         count += 1
+#     elif num % 2 > 0:
+#         num = num * 3 + 1
+#         count += 1
+
+# print(count)
