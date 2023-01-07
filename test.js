@@ -2250,3 +2250,17 @@
 
 // output = Object.keys(output).reduce((a, b) => (output[a] > output[b] ? a : b));
 // console.log(output);
+
+// Given a hash, create a new hash that has the keys and values switched.
+
+// Input: {"a" => 1, "b" => 2, "c" => 3}
+// Output: {1 => "a", 2 => "b", 3 => "c"}
+
+let dic = { a: 1, b: 2, c: 3 };
+let newdic = {};
+
+Object.entries(dic).forEach(function ([key, value]) {
+  newdic[value] = key;
+});
+
+console.log(newdic);
