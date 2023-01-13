@@ -2256,11 +2256,11 @@
 // Input: {"a" => 1, "b" => 2, "c" => 3}
 // Output: {1 => "a", 2 => "b", 3 => "c"}
 
-let dic = { a: 1, b: 2, c: 3 };
-let newdic = {};
+// let dic = { a: 1, b: 2, c: 3 };
+// let newdic = {};
 
-Object.entries(dic).forEach(function ([key, value]) {
-  newdic[value] = key;
-});
+// Object.entries(dic).forEach(function ([key, value]) {
+//   newdic[value] = key;
+// });
 
-console.log(newdic);
+// console.log(newdic);
