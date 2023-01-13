@@ -696,3 +696,28 @@
 # end
 
 # p count
+
+# Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
+
+# Input: ["a", "b", "c", "d"]
+# Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
+
+# array = ["a", "b", "c", "d"]
+# new_array = []
+# index = 0
+# inner = 1
+
+# while index < array.length
+#   while inner < array.length
+#     if index != inner
+#       new_array << array[index] + array[inner]
+#       inner += 1
+#     else
+#       inner += 1
+#     end
+#   end
+#   index += 1
+#   inner = 0
+# end
+
+# p new_array
