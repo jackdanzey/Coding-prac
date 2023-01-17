@@ -721,3 +721,28 @@
 # end
 
 # p new_array
+
+# Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
+
+# Input: “i hate $ but i love money i know i know im crazy”
+# Output: true
+
+# Input: “abcdefghijklmnopqrstuvwxyz”
+# Output: false
+
+# def money_checker(str)
+#   index = 0
+#   output = "False"
+#   while index < str.length
+#     if str[index] == "$"
+#       output = "True"
+#       return output
+#     else
+#       index += 1
+#     end
+#   end
+#   return output
+# end
+
+# p money_checker("i hate $ but i love money i know i know im crazy")
+# p money_checker("test for false case")

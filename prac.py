@@ -602,3 +602,23 @@
 #     output = output + translator[x]
 
 # print(output)
+
+# Given a string, write a function that returns true if the “$” character is contained within the string or false if it is not.
+
+# Input: “i hate $ but i love money i know i know im crazy”
+# Output: true
+
+# Input: “abcdefghijklmnopqrstuvwxyz”
+# Output: false
+
+# def moneyChecker(str):
+#     output = 'False'
+#     for s in str:
+#         if s == '$':
+#             output = 'True'
+#             return output
+#     return output
+
+
+# print(moneyChecker("test case for true $$$ get that paper yo"))
+# print(moneyChecker('test case for false'))
