@@ -2290,3 +2290,33 @@
 // }
 
 // console.log(output);
+
+// You are given two parameters, an array and a number. Return a hash whose keys are each of the values from the array parameter, and whose values are the number parameter.
+
+// Input:
+
+// First argument: ["a", "e", "i", "o", "u"]
+// Second argument: 1
+
+// Output:
+
+// {
+// 'a' => 1,
+// 'e' => 1,
+// 'i' => 1,
+// 'o' => 1,
+// 'u' => 1
+// }
+
+// let firstArgument = ["a", "e", "i", "o", "u"];
+// let secondArgument = 1;
+
+// function assignValue(l, n) {
+//   let newDic = {};
+//   for (let index = 0; index < l.length; index++) {
+//     newDic[l[index]] = n;
+//   }
+//   return newDic;
+// }
+
+// console.log(assignValue(["a", "e", "i", "o", "u"], 1));
