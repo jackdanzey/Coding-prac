@@ -2320,3 +2320,27 @@
 // }
 
 // console.log(assignValue(["a", "e", "i", "o", "u"], 1));
+
+// Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+// Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+// Output: {"Dewey" => 6, "Truman" => 5}
+
+// Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+// let votes = ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"];
+
+// function voteCounter(l) {
+//   let count = {};
+//   for (let index = 0; index < l.length; index++) {
+//     if (!count[l[index]]) {
+//       count[l[index]] = 1;
+//     } else {
+//       count[l[index]] += 1;
+//     }
+//   }
+//   console.log(count);
+// }
+
+// voteCounter(votes);

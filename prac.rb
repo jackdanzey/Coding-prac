@@ -833,3 +833,30 @@
 # end
 
 # p posts
+
+# // Given an array of strings, return a hash that provides of a count of how many times each string occurs.
+
+# // Input: ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# // Output: {"Dewey" => 6, "Truman" => 5}
+
+# // Explanation: "Dewey" occurs 6 times in the array, while "Truman" occurs 5 times.
+
+# votes = ["Dewey", "Truman", "Dewey", "Dewey", "Truman", "Truman", "Dewey", "Truman", "Truman", "Dewey", "Dewey"]
+
+# def vote_counter(l)
+#   count = {}
+#   index = 0
+#   while index < l.length
+#     if !count[l[index]]
+#       count[l[index]] = 1
+#       index += 1
+#     else
+#       count[l[index]] += 1
+#       index += 1
+#     end
+#   end
+#   p count
+# end
+
+# vote_counter(votes)
