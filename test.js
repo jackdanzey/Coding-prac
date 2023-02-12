@@ -2344,3 +2344,22 @@
 // }
 
 // voteCounter(votes);
+
+// Given ONE array of strings, return a new array that contains every combination of each string with every other string in the array.
+
+// Input: ["a", "b", "c", "d"]
+// Output: ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"]
+
+// function combo(arr) {
+//   let array = [];
+//   for (let index = 0; index < arr.length; index++) {
+//     for (let inner = 0; inner < arr.length; inner++) {
+//       if (index !== inner) {
+//         array.push(arr[index] + arr[inner]);
+//       }
+//     }
+//   }
+//   return array;
+// }
+
+// console.log(combo(["a", "b", "c", "d"]));
