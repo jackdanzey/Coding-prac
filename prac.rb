@@ -895,3 +895,18 @@
 # end
 
 # p coolio([90, 20, 70, 100, 30, 80, 10])
+
+# Given a hash, create a new hash that has the keys and values switched.
+
+# Input: {"a" => 1, "b" => 2, "c" => 3}
+# Output: {1 => "a", 2 => "b", 3 => "c"}
+
+# def switcher(dic)
+#   new_dic = {}
+#   dic.each do |key, value|
+#     new_dic[value] = key
+#   end
+#   p new_dic
+# end
+
+# switcher({ "a" => 1, "b" => 2, "c" => 3 })

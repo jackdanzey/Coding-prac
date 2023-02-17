@@ -2363,3 +2363,18 @@
 // }
 
 // console.log(combo(["a", "b", "c", "d"]));
+
+// Given a hash, create a new hash that has the keys and values switched.
+
+// Input: {"a" => 1, "b" => 2, "c" => 3}
+// Output: {1 => "a", 2 => "b", 3 => "c"}
+
+// function switcher(dic) {
+//   let fancyNewDict = {};
+//   Object.entries(dic).forEach(function ([key, value]) {
+//     fancyNewDict[value] = key;
+//   });
+//   console.log(fancyNewDict);
+// }
+
+// switcher({ a: 1, b: 2, c: 3 });
