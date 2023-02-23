@@ -2378,3 +2378,30 @@
 // }
 
 // switcher({ a: 1, b: 2, c: 3 });
+
+// You are given two parameters, an array and a number. Return a hash whose keys are each of the values from the array parameter, and whose values are the number parameter.
+
+// Input:
+
+// First argument: ["a", "e", "i", "o", "u"]
+// Second argument: 1
+
+// Output:
+
+// {
+// 'a' => 1,
+// 'e' => 1,
+// 'i' => 1,
+// 'o' => 1,
+// 'u' => 1
+// }
+
+// function combine(list, num) {
+//   let combined = {};
+//   for (let index = 0; index < list.length; index++) {
+//     combined[list[index]] = num;
+//   }
+//   console.log(combined);
+// }
+
+// combine(["a", "b", "c", "d", "e"], 1);
