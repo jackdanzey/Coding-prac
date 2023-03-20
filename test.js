@@ -2432,14 +2432,31 @@
 
 // Find the sum of all the multiples of 3 or 5 below 1000.
 
-function multi(num) {
-  let sum = 0;
-  for (let index = 1; index < num; index++) {
-    if (index % 3 === 0 || index % 5 === 0) {
-      sum = sum + index;
-    }
-  }
-  console.log(sum);
-}
+// function multi(num) {
+//   let sum = 0;
+//   for (let index = 1; index < num; index++) {
+//     if (index % 3 === 0 || index % 5 === 0) {
+//       sum = sum + index;
+//     }
+//   }
+//   console.log(sum);
+// }
 
-multi(1000);
+// multi(1000);
+
+// Given two arrays of strings, return a new string that contains every combination of a string from the first array concatenated with a string from the second array.
+
+// Input: ["a", "b", "c"], ["d", "e", "f", "g"]
+// Output: ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"]
+
+// function mesh(arr1, arr2) {
+//   let output = [];
+//   for (let index = 0; index < arr1.length; index++) {
+//     for (let inner = 0; inner < arr2.length; inner++) {
+//       output.push(arr1[index] + arr2[inner]);
+//     }
+//   }
+//   console.log(output);
+// }
+
+// mesh(["a", "b", "c"], ["d", "e", "f", "g"]);
