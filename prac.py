@@ -794,3 +794,19 @@
 
 
 # mesh(['a', 'b', 'c'], ['d', 'e', 'f', 'g'])
+
+# Find the largest product of any two numbers within a given array.
+
+# Input: [5, -2, 1, -9, -7, 2, 6]
+# Output: 63 (-9 * -7)
+
+# def largestprod(arr):
+#     output = 0
+#     for x in arr:
+#         for y in arr:
+#             if x != y and x * y > output:
+#                 output = x * y
+#     print(output)
+
+
+# largestprod([5, -2, 1, -9, -7, 2, 6])
